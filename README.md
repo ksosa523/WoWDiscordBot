@@ -11,3 +11,6 @@ Provides player information such as: Faction, Race, Class, Level, Average Item l
 
 !todaywow  
 Provides BFA World Boss information from WoWHead  
+
+#### Future Stuff
+Add a search feature to scrape through WoWHead for Items and Quests
