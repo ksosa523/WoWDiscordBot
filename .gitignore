@@ -142,3 +142,4 @@ cython_debug/
 
 test/
 bot-env/tester.txt
+/bot-env/testt.txt
