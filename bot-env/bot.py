@@ -9,10 +9,7 @@ from bs4 import BeautifulSoup
 load_dotenv()
 client = commands.Bot(command_prefix="!")
 client.remove_command("help")
-#API_CLIENT_ID = "313494b9835645e38035c3c869ed554a"
-#API_CLIENT_SECRET = "E8wb0Q0Hh0MwQ2P1LDDHsuFVzliDMQZg"
 WOW_REGION = "us"
-#DISCORD_TOKEN = 'NzcwNDg5MzcyMzk4NDUyNzc2.X5eUJQ.bMwPwJjzQDfmkT5K_3XJCyT4FN8'
 
 API_CLIENT_ID = os.getenv("API_CLIENT_ID")
 API_CLIENT_SECRET = os.getenv("API_CLIENT_SECRET")
