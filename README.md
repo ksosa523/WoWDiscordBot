@@ -6,7 +6,6 @@ Uses the Blizzard API to pull character information and media, such as an avatar
 Uses BeautifulSoup to webscrape WoWHead(https://www.wowhead.com/) for information displayed on their Today in WoW section.
 Uses Selenium to complete searches and parses them with Beautiful Soup. 
 
-Different sear
 ### Commands
 
 !stats  
