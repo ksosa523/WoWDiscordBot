@@ -24,6 +24,27 @@ access_token = res["access_token"]
 print(r.text)
 #Icons made by Those Icons : https://www.flaticon.com/authors/those-icons"
 
+#daily text pa que no pongamos dique espiritual
+@client.command()
+async def dailytext(ctx):
+    #page to scrape
+    home_page = requests.get("https://wol.jw.org/en/wol/h/r1/lp-e")
+    soup = BeautifulSoup(home_page.content, "html.parser") #chicken noodle soup
+    #starting div containers
+    day = soup.find(id="p5").string
+    bibleText = soup.find(id="p6").string
+    comment = soup.find(id="p7").string
+    
+    em = discord.Embed(
+      title=day,
+      type="rich",
+      description="https://wol.jw.org/en/wol/h/r1/lp-e",
+      colour=discord.Colour.dark_magenta()
+    )
+    
+    em.add_field(name='bibleText', value='comment', inline=False)
+    await ctx.send(content=None, embed=em)
+    
 
 @client.command()
 async def stats(ctx, arg1, *,arg2):
